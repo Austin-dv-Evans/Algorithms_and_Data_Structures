@@ -44,3 +44,54 @@ function sameBest (arr1, arr2) {
     }
     return true
 }
+
+
+/* given two strings write a function to determine if the 
+second string is an anagram of the first assume all inputs
+single words, no punctuation, all lowercase, no spaces */
+
+function validAnagram (str1, str2) {
+    if (str1.length !== str2.length) {
+        return false;
+    }
+    let frequencyCounter1 = {};
+    let frequencyCounter2 = {};
+    for (let char of str1) {
+        frequencyCounter1[char] = (frequencyCounter1[char] || 0) + 1
+    }
+    for (let char of str2) {
+        frequencyCounter2[char] = (frequencyCounter2[char] || 0) + 1
+    }
+    for (let key in frequencyCounter1) {
+        if(!(key in frequencyCounter2)) {
+            return false
+        }
+    }
+    console.log(frequencyCounter1)
+    console.log(frequencyCounter2)
+    return true
+}
+
+
+function validAnagramBest (str1, str2) {
+    if (str1.length !== str2.length) {
+        return false
+    }
+    const lookup = {};
+    for (let i = 0; i < str1.length; i++) {
+        let letter = str1[i]
+        // if letter exists, increment, otherwise set to 1
+        lookup[letter] ? lookup[letter] += 1 : lookup[letter] = 1
+    }
+    for (let i = 0; i < str2.length; i++) {
+        let letter = str2[i]
+        //cant find letter or letter is zero? then its not an anagram
+        if (!lookup[letter]) {
+            return false
+        }
+        else {
+            lookup[letter] -= 1
+        }
+    }
+    return true
+}
