@@ -1,7 +1,7 @@
 // how many times does sequence of letters in short string
 // appear in long string?
 
-function naiveSearch(longStr, shortStr){
+function naiveStringSearch(longStr, shortStr){
     var count = 0
     for(var i = 0; i < longStr.length; i++){
         for(var j = 0; j < shortStr.length; j++){
@@ -21,7 +21,7 @@ function naiveSearch(longStr, shortStr){
 // naiveSearch refactor
 
 
-function naiveSearchRefac(long, short){
+function stringSearchRefac(long, short){
     var count = 0
     for(var i = 0; i < long.length; i++){
         for(var j = 0; j < short.length; j++){
@@ -32,5 +32,5 @@ function naiveSearchRefac(long, short){
     return count
 }
 
-naiveSearch("lorie loled lol", "lol")
-naiveSearchRefac("lorie loled lol", "lol")
+naiveStringSearch("lorie loled lol", "lol")
+stringSearchRefac("lorie loled lol", "lol")

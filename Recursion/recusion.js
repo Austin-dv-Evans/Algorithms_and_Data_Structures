@@ -1,3 +1,6 @@
+// Recursion: a method that calls itself!
+// must have break case
+
 // count down with recursion
 
 function countDown (num) {
