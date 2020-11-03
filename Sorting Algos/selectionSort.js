@@ -1,8 +1,9 @@
-// make element to store first item
+//Selection Sort
+// make an element to store first item
 // compare this item to the next item
 // not saving value, save position, then swap
-// if a smaller number is found designate that
-//smaller number to be the new minimum
+// if a smaller number is found designate that -
+// smaller number to be the new minimum
 //if the minimum is not the value we began with 
 //swap it. 
 

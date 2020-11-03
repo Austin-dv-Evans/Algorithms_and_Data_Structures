@@ -1,15 +1,18 @@
+// Merge Sort
 // create an empty array
 // look at smallest values in each array i and j while loop
 // while there are still values we havent looked at
+
 /* if the value in the first array is smaller than
-the value in the second array, push the value in the first
-arrary into our results and move on the the next value in the 
+the value in the second array, push the value of the first
+array into our results and move on the the next value in the 
 first array */
+
 /* if the value in the first array is larger than the value
-in the second array, push the value in the second array into
-our results and move on to the next value in the second array*/
-//once we exhaust one array, push in all remaining values
-//from the other array 
+in the second array, push the value of the second array into
+our results and move on to the next value in the second array */
+
+//once we exhaust one array, push in all remaining values from the other array 
 
 function merge (arr1, arr2){
     let results = []

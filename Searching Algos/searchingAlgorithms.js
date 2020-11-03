@@ -1,4 +1,5 @@
-/* linear search, this function accepts an array and a value
+/* Linear Search, 
+this function accepts an array and a value
 loop through array and check if value is equal to current element
 if it is return elements index
 if val is never found return -1 */
@@ -13,15 +14,16 @@ function linearSearch(arr, el){
 // linearSearch is O(n) === linear
 
 
-/* binary search, must be a sorted array, eliminate basically
+
+/* Binary Search, 
+must be a sorted array, eliminate basically
 half of the array and search the other side.
 divide and conquer */
 
-/* This function accepts sorted array and element, create left pointer
+/* This function accepts a sorted array and an element, create left pointer
 at start, and right pointer at end, while left pointer is before right
 create middle pointer, if val is to small move left pointer up
-if val is too big move right pointer down, if val is found return 
-index
+if val is too big move right pointer down, if val is found return index
 if val is never found return -1 */
 
 function binarySearch(arr, el){

@@ -1,5 +1,5 @@
-//uses object or sets to collect values/ frequencies of values
-// this can often avoid nested loops with arrays and strings
+/* Frequency Counter uses objects or sets to collect values/frequencies 
+of values. This can often avoid nested loops with arrays and strings */
 
 /* write a function called same which accepts two arrays
 the function should return true if every array in the
@@ -46,8 +46,8 @@ function sameBest (arr1, arr2) {
 }
 
 
-/* given two strings write a function to determine if the 
-second string is an anagram of the first assume all inputs
+/* Anagram: given two strings write a function to determine if the 
+second string is an anagram of the first assume all inputs are
 single words, no punctuation, all lowercase, no spaces */
 
 function validAnagram (str1, str2) {

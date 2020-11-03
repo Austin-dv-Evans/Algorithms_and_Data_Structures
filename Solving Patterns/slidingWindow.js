@@ -1,4 +1,6 @@
-/* This pattern involves creating a window which can either
+/* 
+Sliding Window
+This pattern involves creating a window which can either
 be an array or number from one position to another
 
 depending on a certain condition, the widow either increases 
@@ -9,6 +11,7 @@ array/string
 */
 
 /* 
+Max Sub Array Sum
 write a function called maxSubarraySum which accepts
 an array of integers and a number called n. 
 The function should calculate the maximum sum of n consecutive
@@ -35,8 +38,8 @@ function maxSubArraySumBad (arr, n) {
 }
 // ^^^ quadradic due to nested loop ^^^
 
-// vvv sliding window approach vvv
 
+// vvv sliding window approach vvv
 
 function maxSubArraySumBest (arr, num) {
     let maxSum = 0;
@@ -48,7 +51,7 @@ function maxSubArraySumBest (arr, num) {
     tempSum = maxSum;
     for (let i = num; i < arr.length; i++) {
         // instead of totalling all num of arr we subtract first value
-        // and add new value
+        // and add new/next value
         tempSum = tempSum - arr[i - num] + arr[i];
         //Math.max value is going to be the larger of the two
         //thus updating maxSum if TempSum is larger

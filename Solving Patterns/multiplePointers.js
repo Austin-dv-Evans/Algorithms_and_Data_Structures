@@ -1,4 +1,4 @@
-/* multiple pointers = creating pointers or values
+/* Multiple Pointers = creating pointers or values
 that correspond to an index or position and move towards
 the beginning, end or middle based on a certain condition 
 
@@ -7,7 +7,8 @@ very effective for solving problems with minimal space complexity
 searching for a pair of values or something that matches certain condition
 */
 
-/* write a function called sumZero which accepts a sorted array
+
+/* Sum Zero: write a function called sumZero which accepts a sorted array
 of integers. the function should find the first pair where the sum
 is 0. Return an array that includes both values that sum to zero or 
 undefined if a pair does not exist.
@@ -24,8 +25,9 @@ function sumZeroBad (array){
 }
 // ^^^ O(n^2) bad ^^^
 
-// vvv multiple pointers pattern vvv moving from left and
-// right and heading towards the middle
+
+// Pointers moving from left and right ends and heading towards the middle
+// vvv multiple pointers pattern vvv
 
 function sumZeroBest (array) {
     let left = 0;
@@ -45,12 +47,12 @@ function sumZeroBest (array) {
 }
 
 /* 
-count unique values
+Count Unique Values
 implement a function that accepts a SORTED array and counts
 the number of unique values in the array
 there can be negative numbers but it will always be sorted.
 */
-// both pointers start on left update pointer based on condition
+// both pointers start on left end, we update which pointer based on condition
 
 function countUniqueValues (arr) {
     var i = 0
@@ -60,6 +62,7 @@ function countUniqueValues (arr) {
             arr[i] = arr[j]
         }
     }
+    // vvv edge case of empty array vvv
     if(i === 0) {
         return i
     }else{
