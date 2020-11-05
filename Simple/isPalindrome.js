@@ -5,6 +5,8 @@
 // ex. austin === false
 
 
+//use reverse string functions then compare
+
 function isPalindrome(str){
     const revString = str.split('').reverse().join('')
     return revString === str
@@ -24,5 +26,4 @@ function isPalindrome2(str){
     }
 }
 
-
-console.log(isPalindrome2('rats live on no evil star'))
+console.log(isPalindrome2('racecar'))
